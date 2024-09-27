@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/bd_logo/favicon-16x16.png">
     <link rel="manifest" href="assets/bd_logo/site.webmanifest">
     <style>
-        /* Center the video on the page */
         body, html {
             margin: 0;
             padding: 0;
@@ -17,13 +16,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000; /* Background color to match video */
+            background-color: #000;
         }
 
         video {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             max-width: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
