@@ -6,6 +6,20 @@ body {
     background-color: #10161c;
 }
 
+h2 {
+    font-size: 4.5vw;
+    color: white;
+    text-shadow: 
+    0 0 5px #007c75,
+    0 0 10px #007c75, 
+    0 0 20px #007c75, 
+    0 0 30px cyan;
+}
+
+p {
+    font-size: 2.5vw;
+}
+
 .hero {
     background-image: url('assets/cr_images/cover_photo.png');
     height: 50vh;
@@ -18,7 +32,7 @@ body {
     overflow: hidden;
 }
 .hero h1 {
-    font-size: 4em;
+    font-size: 7vw;
     letter-spacing: 3px;
     animation: move-text 10s infinite linear;
     margin: 0;
@@ -53,7 +67,7 @@ text-transform:uppercase;
 font-family: "Tilt Neon", sans-serif;
 font-optical-sizing: auto;
 font-weight: 400;
-font-size: xx-large;
+font-size: 4vw;
 font-style: normal;
 }
 
@@ -71,7 +85,7 @@ font-style: normal;
 
 .title {
     text-align: center;
-    font-size: 2em;
+    font-size: 8vw;
     margin-bottom: 20px;
     font-family: "Tilt Neon", sans-serif;
     color: #96e3f4;
@@ -113,7 +127,7 @@ font-style: normal;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 2vw;
 }
 
 .card button:hover {
