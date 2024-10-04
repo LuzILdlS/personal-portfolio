@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color:  whitesmoke;
+    background-color: #10161c;
+}
+
+h2 {
+    font-size: 4.5vw;
+    color: white;
+    text-shadow: 
+    0 0 5px #007c75,
+    0 0 10px #007c75, 
+    0 0 20px #007c75, 
+    0 0 30px cyan;
+}
+
+p {
+    font-size: 2.5vw;
+}
+
+.hero {
+    background-image: url('assets/cr_images/cover_photo.png');
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.hero h1 {
+    font-size: 7vw;
+    letter-spacing: 3px;
+    animation: move-text 10s infinite linear;
+    margin: 0;
+}
+
+.neon-red {
+color: transparent; /* Color del texto */
+-webkit-text-fill-color: #d70d0d3a; /* Para que el texto se vea vacío */
+-webkit-text-stroke: 2px #dc9595eb; /* Ancho y color del borde */
+text-shadow: 
+0 0 5px red, 
+0 0 10px red, 
+0 0 20px red, 
+0 0 30px pink; 
+text-transform:none;
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-style: oblique;
+font-weight: bold;
+}
+
+.neon-blue {
+color: #007c75; /* Color del texto */
+-webkit-text-fill-color: transparent; /* Para que el texto se vea vacío */
+-webkit-text-stroke: 2px #5acfc9;
+text-shadow: 
+0 0 5px #007c75, 
+0 0 10px #007c75, 
+0 0 20px #007c75, 
+0 0 30px cyan;
+text-transform:uppercase;
+font-family: "Tilt Neon", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-size: 4vw;
+font-style: normal;
+}
+
+.container {
+    display: flex; /* Usa flexbox para alinear las columnas */
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1; /* Cada columna ocupará el mismo espacio */
+    margin: 0 10px; /* Espaciado entre columnas */
+}
+
+.title {
+    text-align: center;
+    font-size: 8vw;
+    margin-bottom: 20px;
+    font-family: "Tilt Neon", sans-serif;
+    color: #96e3f4;
+    -webkit-text-fill-color: transparent; /* Para que el texto se vea vacío */
+    -webkit-text-stroke: 2px #5acfc9;
+    text-shadow: 
+    0 0 5px #007c75, 
+    0 0 10px #007c75, 
+    0 0 20px cyan;
+}
+
+.divider {
+    width: 0%; /* Ancho del divisor */
+    margin: 0 20px; /* Espaciado en el margen */
+    height: auto; /* Altura automática */
+    display: none;
+}
+
+.card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(15, 149, 140, 0.3); /* Sombra de tarjeta */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card button {
+    background-color: #ff4c4c; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 2vw;
+}
+
+.card button:hover {
+    background-color: #ff0000; /* Color al pasar el ratón */
+}
+
+    /*Animation functions Section*/
+    @keyframes move-text {
+0% {
+transform: translateY(100%);
+}
+100% {
+transform: translateY(-100%);
+}
+}
