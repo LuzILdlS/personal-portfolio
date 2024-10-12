@@ -17,6 +17,7 @@
             justify-content: center;
             align-items: center;
             background-color: #000;
+            position: relative; /* Necesario para que el botón se posicione dentro del contenedor */
         }
 
         video {
@@ -26,6 +27,25 @@
             max-width: 100%;
             max-height: 100%;
             background-color: #000;
+            display: block; /* Hacer que el video se comporte como un bloque */
+        }
+
+        .overlay-button {
+            position: absolute;
+            top: 92%; /* Ajusta la posición vertical */
+            left: 50%; /* Ajusta la posición horizontal */
+            transform: translate(-50%, -50%); /* Centrar el botón */
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.3); /* Color de fondo con transparencia */
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10; /* Para que el botón esté por encima del video */
+        }
+
+        /* Cambiar el estilo del botón cuando el mouse esté sobre él */
+        .overlay-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
         }
     </style>
 </head>
@@ -34,5 +54,8 @@
         <source src="../assets/bd_invitation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <a href="https://maps.app.goo.gl/QFzpAXhsaueZDE9c9">
+        <button class="overlay-button"> Click for location</button>
+     </a>
 </body>
 </html>

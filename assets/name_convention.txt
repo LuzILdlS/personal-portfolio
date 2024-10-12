@@ -1,0 +1,14 @@
+The asset folder follows a name convention as follows:
+[nm]_[assets-kind]
+
+Where:
+
+[nm] refers to a name specific for each project, only two letters allowed for the unique ID. In this project:
+ - bd: Birth Day invitation project
+ - cr: Cinema Ranking project
+ - pi: Personal portfolio Index main page
+
+[assets-kind short description w/o blank spaces] refers to a short description w/o blank spaces of the assets the folder will contain, for example:
+ - nm_images
+ - nm_videos
+ - nm_logo
