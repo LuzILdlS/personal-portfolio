@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Vocabulary</title>
+    <style>
+        .btn-toggle {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex; /* Usa flexbox para alinear las columnas */
+            justify-content: normal;
+            margin: 5px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1; /* Cada columna ocupará el mismo espacio */
+            margin: 0 10px; /* Espaciado entre columnas */
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Apilar las columnas verticalmente */
+            }
+
+            .column {
+                width: 100%; /* Asegura que cada columna tome el 100% del ancho disponible en pantallas pequeñas */
+            }
+        }
+        .divider {
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Vocabulary in several languages</h1>
+    <h2>Learn the colors in Spanish, German, or English</h2>
+    <!-- Botón para cambiar el idioma -->
+    <button class="btn-toggle" onclick="toggleTitle()">Change language</button>
+    <!-- Sección de imagenes -->
+     <div class="container">
+        <div class="column">
+            <h2 class="color-title" id="red">Rojo</h2>
+            <img class="color" src="../assets/co_images/red.png" alt="color red" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="yellow">Amarillo</h2>
+            <img class="color" src="../assets/co_images/yellow.png" alt="color yellow" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="blue">Azul</h2>
+            <img class="color" src="../assets/co_images/blue.png" alt="color blue" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="green">Verde</h2>
+            <img class="color" src="../assets/co_images/green.png" alt="color green" height="350">
+            <div class="divider"></div>
+        </div>
+        <div class="column">
+            <h2 class="color-title" id="purple">Morado</h2>
+            <img class="color" src="../assets/co_images/purple.png" alt="color purple" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="orange">Naranja</h2>
+            <img class="color" src="../assets/co_images/orange.png" alt="color orange" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="pink">Rosa</h2>
+            <img class="color" src="../assets/co_images/pink.png" alt="color pink" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="turquoise">Turquesa</h2>
+            <img class="color" src="../assets/co_images/turquoise.png" alt="color turquoise" height="350">
+            <div class="divider"></div>
+        </div>
+        <div class="column">
+            <h2 class="color-title" id="gray">Gris</h2>
+            <img class="color" src="../assets/co_images/gray.png" alt="color gray" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="brown">Café</h2>
+            <img class="color" src="../assets/co_images/brown.png" alt="color brown" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="white">Blanco</h2>
+            <img class="color" src="../assets/co_images/white.png" alt="color white" height="350">
+            <div class="divider"></div>
+            <h2 class="color-title" id="black">Negro</h2>
+            <img class="color" src="../assets/co_images/black.png" alt="color black" height="350">
+            <div class="divider"></div> 
+        </div>
+     </div>
+    <!--Sección para funcionamiento del botón-->
+    <script>
+        const red_titles = ['Rojo', 'Rot', 'Red'];
+        const yellow_titles = ['Amarillo', 'Gelb', 'Yellow'];
+        const blue_titles = ['Azul', 'Blau', 'Blue'];
+        const green_titles = ['Verde', 'Grün', 'Green'];
+        const purple_titles = ['Morado', 'Lila', 'Purple'];
+        const orange_titles = ['Naranja', 'Orange', 'Orange'];
+        const pink_titles = ['Rosa', 'Pink', 'Rosa'];
+        const turquoise_titles = ['Turquesa', 'Türkis', 'Turquoise'];
+        const gray_titles = ['Gris', 'Grau', 'Gray'];
+        const brown_titles = ['Café', 'Braun', 'Brown'];
+        const white_titles = ['Blanco', 'Weiß', 'White'];
+        const black_titles = ['Negro', 'Schwarz', 'Black'];
+        let currentTitleIndex = 0; //variable para moverse en el vector
+        function toggleTitle() {
+            // Obtiene el elemento h2 específico con su id
+            const redtitleElement = document.getElementById('red');
+            // Cambia el texto de ese por el correspondiente vector
+            redtitleElement.textContent = red_titles[currentTitleIndex];
+            const yellowtitleElement = document.getElementById('yellow')
+            yellowtitleElement.textContent = yellow_titles[currentTitleIndex];
+            const bluetitleElement = document.getElementById('blue')
+            bluetitleElement.textContent = blue_titles[currentTitleIndex];
+            const greentitleElement = document.getElementById('green')
+            greentitleElement.textContent = green_titles[currentTitleIndex];
+            const purpletitleElement = document.getElementById('purple')
+            purpletitleElement.textContent = purple_titles[currentTitleIndex];
+            const orangetitleElement = document.getElementById('orange')
+            orangetitleElement.textContent = orange_titles[currentTitleIndex];
+            const pinktitleElement = document.getElementById('pink')
+            pinktitleElement.textContent = pink_titles[currentTitleIndex];
+            const turquoisetitleElement = document.getElementById('turquoise')
+            turquoisetitleElement.textContent = turquoise_titles[currentTitleIndex];
+            const graytitleElement = document.getElementById('gray')
+            graytitleElement.textContent = gray_titles[currentTitleIndex];
+            const browntitleElement = document.getElementById('brown')
+            browntitleElement.textContent = brown_titles[currentTitleIndex];
+            const whitetitleElement = document.getElementById('white')
+            whitetitleElement.textContent = white_titles[currentTitleIndex];
+            const blacktitleElement = document.getElementById('black')
+            blacktitleElement.textContent = black_titles[currentTitleIndex];
+            currentTitleIndex = (currentTitleIndex + 1) % red_titles.length;
+        }
+    </script>
+</body>
+</html>
