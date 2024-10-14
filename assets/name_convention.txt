@@ -7,6 +7,7 @@ Where:
  - bd: Birth Day invitation project
  - cr: Cinema Ranking project
  - pi: Personal portfolio Index main page
+ - co: COlor Vocabulary project
 
 [assets-kind short description w/o blank spaces] refers to a short description w/o blank spaces of the assets the folder will contain, for example:
  - nm_images
