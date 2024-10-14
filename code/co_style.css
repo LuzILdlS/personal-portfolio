@@ -1,0 +1,132 @@
+body {
+    font-family: cursive;
+    margin: 0; /* Remove default margin */
+
+}
+
+.btn-toggle {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    justify-content: center; /* Center columns */
+    margin: 5px;
+}
+
+.column {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis: 30% width */
+    margin: 10px; /* Spacing between columns */
+    position: relative; /* Needed for positioning child elements */
+}
+
+.image-container {
+    position: relative; /* Position relative to center title */
+    width: 100%; /* Make sure the image takes full width */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* Make image responsive */
+    height: auto; /* Keep aspect ratio */
+}
+
+.image-container h2 {
+    position: absolute; /* Positioning for the title */
+    top: 2px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Shift back by 50% of its own width */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: #ffffff;
+    padding: 5px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+h1{
+    font-size: 10vw;
+    text-align: center;
+    background: linear-gradient(to right, indigo, violet, red, orange, rgb(190, 200, 8), green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 6vw;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+
+.colored {
+    color: #9444a7; /* Highlighted color */
+    font-weight: bold;
+}
+
+.divider{
+    height: 50px;
+    width: 50px;
+}
+
+#red{
+    color: red;
+}
+
+#yellow{
+    color: rgba(188, 188, 19, 0.94);
+}
+
+#blue{
+    color: blue;
+}
+
+#green{
+    color:green;
+}
+
+#purple{
+    color:purple;
+}
+
+#orange{
+    color:orange;
+}
+
+#pink{
+    color:rgb(223, 106, 125);
+}
+
+#turquoise{
+    color: turquoise;
+}
+
+#gray{
+    color: gray;
+}
+
+#brown{
+    color: brown;
+}
+
+#white{
+    color: white;
+    background: #9444a7;
+}
+
+#black{
+    color: black;
+}
