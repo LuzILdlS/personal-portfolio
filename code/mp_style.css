@@ -1,0 +1,41 @@
+
+body{
+    margin: 0; 
+    padding: 0;
+    background-image: url('../assets/mp_images/background.jpeg'); 
+    background-size: 100% auto; 
+    background-repeat: repeat-y; 
+    background-position: top center;
+    background-attachment: scroll; 
+    text-align: center;
+
+}
+h1{
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+.card{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    background: black;
+    border-bottom: 2vw solid black; 
+    font-size: 1.5vw;
+}
+img{
+    border: 5px solid white;
+    width: 75%;
+    margin-top: 10%;
+}
+.footer{
+    border-bottom: 10vw solid transparent; 
+    width: 100%;
+}
+#title{
+    text-transform: none;
+    font-size: 7vw;
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 0;
+}
