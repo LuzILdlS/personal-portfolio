@@ -1,0 +1,51 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+img.logo{
+  float: left;
+  margin: 10px 0px 10px 10%;
+  flex: 0.5;
+  max-width: 15%;
+}
+
+div.bar{
+  background-color: rgba(25, 25, 112,1);
+  width: 35%;
+  height: auto;
+  clip-path: polygon(0% 0%, 100% 0%, 94% 100%, 0% 100%); /* poli­gono para forma trapezoidal  polygon(x1 y1, x2 y2, ... ,xn yn), recorta lo que queda dentro*/
+  display: flex;
+  /*justify-content: flex-end;  Alinea todo el contenido a la derecha */
+  align-items: center; /* Centra verticalmente */
+  position: fixed;
+}
+/*.bar{
+  
+}*/
+div.bar > p{
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  color: #f4bc70;
+  flex: 0.5;
+  font-size:5vw;
+  margin: 0px 30px 0px 10px;
+  text-align: right;
+}
