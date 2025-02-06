@@ -3,13 +3,15 @@ The asset folder follows a name convention as follows:
 
 Where:
 
-[nm] refers to a name specific for each project, only two letters allowed for the unique ID. In this project:
+[nm] - refers to a name specific for each project, only two letters allowed for the unique ID. In this project:
  - bd: Birth Day invitation project
  - cr: Cinema Ranking project
  - pi: Personal portfolio Index main page
- - co: COlor Vocabulary project
+ - co: Color Vocabulary project
+ - mp: Motivational memes webpage project
+ - da: Design agency project
 
-[assets-kind short description w/o blank spaces] refers to a short description w/o blank spaces of the assets the folder will contain, for example:
+[assets-kind] - refers to a short description w/o blank spaces of the assets the folder will contain, for example:
  - nm_images
  - nm_videos
  - nm_logo
