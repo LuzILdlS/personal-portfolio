@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
+  margin: 20px 0px 0 10px;
   background-color: #faf9f6;
   display: flex;
   flex-direction: column;
@@ -19,31 +19,50 @@ footer {
   color: midnightblue;
 }
 
+div.header > p.slogan {
+  display: block;
+  text-align: right;
+  font-size: 3vw;
+  color: #191970;;
+  padding-top:3%;
+}
+
 img.logo{
   float: left;
   margin: 10px 0px 10px 10%;
   flex: 0.5;
   max-width: 15%;
+  opacity: 0.8;
 }
 
 div.bar{
-  background-color: rgba(25, 25, 112,1);
+  background-color: #191970cc;
   width: 35%;
   height: auto;
   clip-path: polygon(0% 0%, 100% 0%, 94% 100%, 0% 100%); /* poli­gono para forma trapezoidal  polygon(x1 y1, x2 y2, ... ,xn yn), recorta lo que queda dentro*/
   display: flex;
-  /*justify-content: flex-end;  Alinea todo el contenido a la derecha */
   align-items: center; /* Centra verticalmente */
   position: fixed;
 }
-/*.bar{
-  
-}*/
+
+p.bar.dec1{
+  position: fixed;
+  margin: -1.06% 0px 0px 33%;
+  font-size: 6.7vw;
+  color: #191970cc;
+}
+
+p.bar.dec2{
+  position: fixed;
+  margin: -8.5% 0px 0px 34.5%;
+  font-size: 16.5vw;
+  color: rgba(244, 188, 112,0.8);
+}
 div.bar > p{
   display: inline-block;
   width: fit-content;
   height: fit-content;
-  color: #f4bc70;
+  color: #f4bc70e3;
   flex: 0.5;
   font-size:5vw;
   margin: 0px 30px 0px 10px;
